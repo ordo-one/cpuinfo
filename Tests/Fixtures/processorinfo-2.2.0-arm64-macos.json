@@ -1,0 +1,816 @@
+{
+  "caches" : {
+    "l1Data" : [
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 0,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 0,
+        "partitions" : 1,
+        "sets" : 128,
+        "size" : 65536
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 1,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 1,
+        "partitions" : 1,
+        "sets" : 128,
+        "size" : 65536
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 2,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 2,
+        "partitions" : 1,
+        "sets" : 128,
+        "size" : 65536
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 3,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 3,
+        "partitions" : 1,
+        "sets" : 128,
+        "size" : 65536
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 4,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 4,
+        "partitions" : 1,
+        "sets" : 128,
+        "size" : 65536
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 5,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 5,
+        "partitions" : 1,
+        "sets" : 128,
+        "size" : 65536
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 6,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 6,
+        "partitions" : 1,
+        "sets" : 128,
+        "size" : 65536
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 7,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 7,
+        "partitions" : 1,
+        "sets" : 128,
+        "size" : 65536
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 8,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 8,
+        "partitions" : 1,
+        "sets" : 128,
+        "size" : 65536
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 9,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 9,
+        "partitions" : 1,
+        "sets" : 128,
+        "size" : 65536
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 10,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 10,
+        "partitions" : 1,
+        "sets" : 128,
+        "size" : 65536
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 11,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 11,
+        "partitions" : 1,
+        "sets" : 128,
+        "size" : 65536
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 12,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 12,
+        "partitions" : 1,
+        "sets" : 128,
+        "size" : 65536
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 13,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 13,
+        "partitions" : 1,
+        "sets" : 128,
+        "size" : 65536
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 14,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 14,
+        "partitions" : 1,
+        "sets" : 128,
+        "size" : 65536
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 15,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 15,
+        "partitions" : 1,
+        "sets" : 128,
+        "size" : 65536
+      }
+    ],
+    "l1Instruction" : [
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 0,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 0,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 1,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 1,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 2,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 2,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 3,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 3,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 4,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 4,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 5,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 5,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 6,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 6,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 7,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 7,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 8,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 8,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 9,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 9,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 10,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 10,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 11,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 11,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 12,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 12,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 13,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 13,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 14,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 14,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 4,
+        "flags" : 0,
+        "id" : {
+          "index" : 15,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 15,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      }
+    ],
+    "l2" : [
+      {
+        "associativity" : 8,
+        "flags" : 0,
+        "id" : {
+          "index" : 0,
+          "kind" : "unified",
+          "level" : 2
+        },
+        "kind" : "unified",
+        "level" : 2,
+        "lineSize" : 128,
+        "logicalProcessorCount" : 16,
+        "logicalProcessorOffset" : 0,
+        "partitions" : 1,
+        "sets" : 4096,
+        "size" : 4194304
+      }
+    ],
+    "l3" : [
+
+    ],
+    "l4" : [
+
+    ]
+  },
+  "clusters" : [
+    {
+      "coreCount" : 12,
+      "coreOffset" : 0,
+      "id" : 0,
+      "logicalProcessorCount" : 12,
+      "logicalProcessorOffset" : 0,
+      "microarchitecture" : 7340808
+    },
+    {
+      "coreCount" : 4,
+      "coreOffset" : 12,
+      "id" : 1,
+      "logicalProcessorCount" : 4,
+      "logicalProcessorOffset" : 12,
+      "microarchitecture" : 7340809
+    }
+  ],
+  "cores" : [
+    {
+      "id" : 0,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 0,
+      "microarchitecture" : 7340808
+    },
+    {
+      "id" : 1,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 1,
+      "microarchitecture" : 7340808
+    },
+    {
+      "id" : 2,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 2,
+      "microarchitecture" : 7340808
+    },
+    {
+      "id" : 3,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 3,
+      "microarchitecture" : 7340808
+    },
+    {
+      "id" : 4,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 4,
+      "microarchitecture" : 7340808
+    },
+    {
+      "id" : 5,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 5,
+      "microarchitecture" : 7340808
+    },
+    {
+      "id" : 6,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 6,
+      "microarchitecture" : 7340808
+    },
+    {
+      "id" : 7,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 7,
+      "microarchitecture" : 7340808
+    },
+    {
+      "id" : 8,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 8,
+      "microarchitecture" : 7340808
+    },
+    {
+      "id" : 9,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 9,
+      "microarchitecture" : 7340808
+    },
+    {
+      "id" : 10,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 10,
+      "microarchitecture" : 7340808
+    },
+    {
+      "id" : 11,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 11,
+      "microarchitecture" : 7340808
+    },
+    {
+      "id" : 12,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 12,
+      "microarchitecture" : 7340809
+    },
+    {
+      "id" : 13,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 13,
+      "microarchitecture" : 7340809
+    },
+    {
+      "id" : 14,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 14,
+      "microarchitecture" : 7340809
+    },
+    {
+      "id" : 15,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 15,
+      "microarchitecture" : 7340809
+    }
+  ],
+  "isa" : {
+    "arm" : {
+      "aes" : true,
+      "atomics" : true,
+      "bf16" : true,
+      "crc32" : true,
+      "fcma" : true,
+      "fhm" : true,
+      "fp8" : false,
+      "i8mm" : true,
+      "jscvt" : true,
+      "neon" : {
+        "bf16" : true,
+        "dotProd" : true,
+        "f8mm" : false,
+        "fma" : true,
+        "fp16" : true,
+        "fp16Arith" : true,
+        "fp8Dot4" : false,
+        "neon" : true,
+        "rdm" : true,
+        "v8" : true
+      },
+      "pmull" : true,
+      "scalarFP16Arith" : true,
+      "sha1" : true,
+      "sha2" : true,
+      "sme" : {
+        "b16b16" : false,
+        "bi32i32" : true,
+        "f16f16" : false,
+        "i16i32" : true,
+        "mop4" : false,
+        "sme" : true,
+        "sme2" : true,
+        "sme2p1" : false
+      },
+      "sve" : {
+        "sve" : false,
+        "sve2" : false,
+        "sve2p1" : false,
+        "sveBf16" : false
+      }
+    }
+  },
+  "logicalProcessors" : [
+    {
+      "id" : 0,
+      "smtID" : 0
+    },
+    {
+      "id" : 1,
+      "smtID" : 0
+    },
+    {
+      "id" : 2,
+      "smtID" : 0
+    },
+    {
+      "id" : 3,
+      "smtID" : 0
+    },
+    {
+      "id" : 4,
+      "smtID" : 0
+    },
+    {
+      "id" : 5,
+      "smtID" : 0
+    },
+    {
+      "id" : 6,
+      "smtID" : 0
+    },
+    {
+      "id" : 7,
+      "smtID" : 0
+    },
+    {
+      "id" : 8,
+      "smtID" : 0
+    },
+    {
+      "id" : 9,
+      "smtID" : 0
+    },
+    {
+      "id" : 10,
+      "smtID" : 0
+    },
+    {
+      "id" : 11,
+      "smtID" : 0
+    },
+    {
+      "id" : 12,
+      "smtID" : 0
+    },
+    {
+      "id" : 13,
+      "smtID" : 0
+    },
+    {
+      "id" : 14,
+      "smtID" : 0
+    },
+    {
+      "id" : 15,
+      "smtID" : 0
+    }
+  ],
+  "packages" : [
+    {
+      "clusterCount" : 2,
+      "clusterOffset" : 0,
+      "coreCount" : 16,
+      "coreOffset" : 0,
+      "id" : 0,
+      "logicalProcessorCount" : 16,
+      "name" : "Apple M4 Max",
+      "processorOffset" : 0
+    }
+  ]
+}

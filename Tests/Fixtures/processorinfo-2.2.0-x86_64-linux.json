@@ -1,0 +1,392 @@
+{
+  "caches" : {
+    "l1Data" : [
+      {
+        "associativity" : 8,
+        "flags" : 0,
+        "id" : {
+          "index" : 0,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 64,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 0,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 8,
+        "flags" : 0,
+        "id" : {
+          "index" : 1,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 64,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 1,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 8,
+        "flags" : 0,
+        "id" : {
+          "index" : 2,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 64,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 2,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 8,
+        "flags" : 0,
+        "id" : {
+          "index" : 3,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 64,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 3,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 8,
+        "flags" : 0,
+        "id" : {
+          "index" : 4,
+          "kind" : "data",
+          "level" : 1
+        },
+        "kind" : "data",
+        "level" : 1,
+        "lineSize" : 64,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 4,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      }
+    ],
+    "l1Instruction" : [
+      {
+        "associativity" : 8,
+        "flags" : 0,
+        "id" : {
+          "index" : 0,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 64,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 0,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 8,
+        "flags" : 0,
+        "id" : {
+          "index" : 1,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 64,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 1,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 8,
+        "flags" : 0,
+        "id" : {
+          "index" : 2,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 64,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 2,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 8,
+        "flags" : 0,
+        "id" : {
+          "index" : 3,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 64,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 3,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      },
+      {
+        "associativity" : 8,
+        "flags" : 0,
+        "id" : {
+          "index" : 4,
+          "kind" : "instruction",
+          "level" : 1
+        },
+        "kind" : "instruction",
+        "level" : 1,
+        "lineSize" : 64,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 4,
+        "partitions" : 1,
+        "sets" : 256,
+        "size" : 131072
+      }
+    ],
+    "l2" : [
+      {
+        "associativity" : 16,
+        "flags" : 1,
+        "id" : {
+          "index" : 0,
+          "kind" : "unified",
+          "level" : 2
+        },
+        "kind" : "unified",
+        "level" : 2,
+        "lineSize" : 64,
+        "logicalProcessorCount" : 4,
+        "logicalProcessorOffset" : 0,
+        "partitions" : 1,
+        "sets" : 8192,
+        "size" : 8388608
+      },
+      {
+        "associativity" : 16,
+        "flags" : 1,
+        "id" : {
+          "index" : 1,
+          "kind" : "unified",
+          "level" : 2
+        },
+        "kind" : "unified",
+        "level" : 2,
+        "lineSize" : 64,
+        "logicalProcessorCount" : 1,
+        "logicalProcessorOffset" : 4,
+        "partitions" : 1,
+        "sets" : 8192,
+        "size" : 8388608
+      }
+    ],
+    "l3" : [
+
+    ],
+    "l4" : [
+
+    ]
+  },
+  "clusters" : [
+    {
+      "coreCount" : 4,
+      "coreOffset" : 0,
+      "id" : 0,
+      "logicalProcessorCount" : 4,
+      "logicalProcessorOffset" : 0,
+      "microarchitecture" : 1049093
+    },
+    {
+      "coreCount" : 1,
+      "coreOffset" : 4,
+      "id" : 1,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 4,
+      "microarchitecture" : 1049093
+    }
+  ],
+  "cores" : [
+    {
+      "id" : 0,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 0,
+      "microarchitecture" : 1049093
+    },
+    {
+      "id" : 1,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 1,
+      "microarchitecture" : 1049093
+    },
+    {
+      "id" : 2,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 2,
+      "microarchitecture" : 1049093
+    },
+    {
+      "id" : 3,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 3,
+      "microarchitecture" : 1049093
+    },
+    {
+      "id" : 4,
+      "logicalProcessorCount" : 1,
+      "logicalProcessorOffset" : 4,
+      "microarchitecture" : 1049093
+    }
+  ],
+  "isa" : {
+    "x86" : {
+      "adx" : false,
+      "aes" : true,
+      "amx" : {
+        "bf16" : false,
+        "fp16" : false,
+        "fp8" : false,
+        "int8" : false,
+        "tile" : false
+      },
+      "avx" : {
+        "avx" : true,
+        "avx10_1" : false,
+        "avx10_2" : false,
+        "avx2" : true,
+        "avx512_4fmaps" : false,
+        "avx512_4vnniw" : false,
+        "avx512bf16" : false,
+        "avx512bitalg" : false,
+        "avx512bw" : false,
+        "avx512cd" : false,
+        "avx512dq" : false,
+        "avx512er" : false,
+        "avx512f" : false,
+        "avx512fp16" : false,
+        "avx512ifma" : false,
+        "avx512pf" : false,
+        "avx512vbmi" : false,
+        "avx512vbmi2" : false,
+        "avx512vl" : false,
+        "avx512vnni" : false,
+        "avx512vp2intersect" : false,
+        "avx512vpopcntdq" : false,
+        "avxVnni" : false
+      },
+      "avxNeConvert" : false,
+      "avxVnniInt16" : false,
+      "avxVnniInt8" : false,
+      "bmi" : true,
+      "bmi2" : true,
+      "clwb" : false,
+      "cmov" : true,
+      "f16c" : true,
+      "fma3" : true,
+      "fma4" : false,
+      "gfni" : false,
+      "hle" : false,
+      "invariantTSC" : true,
+      "lzcnt" : true,
+      "movbe" : true,
+      "pclmulqdq" : true,
+      "popcnt" : true,
+      "rdpid" : false,
+      "rdrand" : true,
+      "rdseed" : false,
+      "rdtsc" : true,
+      "rdtscp" : true,
+      "rtm" : false,
+      "sha" : false,
+      "sse" : {
+        "sse" : true,
+        "sse2" : true,
+        "sse3" : true,
+        "sse4_1" : true,
+        "sse4_2" : true,
+        "sse4a" : false,
+        "ssse3" : true
+      },
+      "vaes" : false,
+      "vpclmulqdq" : false
+    }
+  },
+  "logicalProcessors" : [
+    {
+      "id" : 0,
+      "linuxID" : 0,
+      "smtID" : 0
+    },
+    {
+      "id" : 1,
+      "linuxID" : 1,
+      "smtID" : 0
+    },
+    {
+      "id" : 2,
+      "linuxID" : 2,
+      "smtID" : 0
+    },
+    {
+      "id" : 3,
+      "linuxID" : 3,
+      "smtID" : 0
+    },
+    {
+      "id" : 4,
+      "linuxID" : 4,
+      "smtID" : 0
+    }
+  ],
+  "packages" : [
+    {
+      "clusterCount" : 1,
+      "clusterOffset" : 0,
+      "coreCount" : 4,
+      "coreOffset" : 0,
+      "id" : 0,
+      "logicalProcessorCount" : 4,
+      "name" : "Intel VirtualApple 2.50GHz",
+      "processorOffset" : 0
+    },
+    {
+      "clusterCount" : 1,
+      "clusterOffset" : 1,
+      "coreCount" : 1,
+      "coreOffset" : 4,
+      "id" : 1,
+      "logicalProcessorCount" : 1,
+      "name" : "Intel VirtualApple 2.50GHz",
+      "processorOffset" : 4
+    }
+  ]
+}
