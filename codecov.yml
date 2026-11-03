@@ -1,0 +1,5 @@
+# Vendored pytorch/cpuinfo; Linux CI exercises only the x86 Linux paths.
+ignore:
+  - "Sources/_cpuinfo/src"
+  - "Sources/_cpuinfo/include"
+  - "Sources/_cpuinfo/deps"
