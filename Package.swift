@@ -48,6 +48,9 @@ let package = Package(
                 + "binary frameworks should enable this trait."
         )
     ],
+    dependencies: [
+        .package(url: "https://github.com/swiftlang/swift-docc-plugin", from: "1.5.0")
+    ],
     targets: [
 
         // MARK: - Vendored C library
