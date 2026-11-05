@@ -67,11 +67,11 @@ public struct ProcessorFrequencyInfo: Sendable, Equatable, Hashable, Codable, Cu
 
     /// Populated by ``ProcessorInfo`` during initialization.
     /// Returns `nil` when the host does not expose CPUID leaf 0x16.
-    internal static func load() -> ProcessorFrequencyInfo? {
+    internal static func load() -> Self? {
         #if arch(x86_64) || arch(i386)
         let info = cpuinfo_x86_query_freq_info()
         guard info.available else { return nil }
-        return ProcessorFrequencyInfo(
+        return Self(
             baseFrequencyMHz: info.base_frequency_mhz,
             maxFrequencyMHz: info.max_frequency_mhz,
             busFrequencyMHz: info.bus_frequency_mhz

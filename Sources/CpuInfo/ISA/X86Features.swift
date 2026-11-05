@@ -12,6 +12,8 @@
 //
 // ===----------------------------------------------------------------------===//
 
+// swiftlint:disable file_length
+
 internal import _cpuinfo
 
 /// x86/x86-64 instruction set feature detection.
@@ -31,9 +33,9 @@ public struct X86Features: Sendable, Equatable, Hashable, Codable {
         /// SSSE3 — supplemental byte shuffles including PSHUFB (Merom, 2006).
         public let ssse3: Bool
         /// SSE4.1 — dword multiply, blend, dot product, streaming load (Penryn, 2007).
-        public let sse4_1: Bool // swiftlint:disable:this identifier_name
+        public let sse4_1: Bool
         /// SSE4.2 — string/text processing, CRC32, POPCNT (Nehalem, 2008).
-        public let sse4_2: Bool // swiftlint:disable:this identifier_name
+        public let sse4_2: Bool
         /// SSE4a — AMD-only extensions: LZCNT, EXTRQ/INSERTQ, MOVNTSD (Barcelona, 2007).
         public let sse4a: Bool
         #if arch(x86_64) || arch(i386)
@@ -90,13 +92,13 @@ public struct X86Features: Sendable, Equatable, Hashable, Codable {
         /// AVX-512 VP2INTERSECT — pairwise intersection of dword/qword vectors (Tiger Lake, subsequently removed).
         public let avx512vp2intersect: Bool
         /// AVX-512 4VNNIW — 4-register packed neural-network instructions (Knights Mill only).
-        public let avx512_4vnniw: Bool // swiftlint:disable:this identifier_name
+        public let avx512_4vnniw: Bool
         /// AVX-512 4FMAPS — 4-register single-precision FMA (Knights Mill only).
-        public let avx512_4fmaps: Bool // swiftlint:disable:this identifier_name
+        public let avx512_4fmaps: Bool
         /// AVX10.1 — unified AVX10 ISA across P- and E-cores, 256-bit baseline (2024+).
-        public let avx10_1: Bool // swiftlint:disable:this identifier_name
+        public let avx10_1: Bool
         /// AVX10.2 — AVX10 revision 2.
-        public let avx10_2: Bool // swiftlint:disable:this identifier_name
+        public let avx10_2: Bool
         #if arch(x86_64) || arch(i386)
         init() {
             avx               = cpuinfo_has_x86_avx()
@@ -254,7 +256,7 @@ extension X86Features.SSEFeatures {
     // Declared rather than synthesized so that `init(flag:)` can name it in its signature.
     enum CodingKeys: String, CodingKey {
         case sse, sse2, sse3, ssse3, sse4a
-        case sse4_1, sse4_2 // swiftlint:disable:this identifier_name
+        case sse4_1, sse4_2
     }
 
     /// Decodes a snapshot; a flag that an older version did not write decodes as `false`.
@@ -283,7 +285,7 @@ extension X86Features.AVXFeatures {
         case avx, avx2, avxVnni, avx512f, avx512pf, avx512er, avx512cd, avx512dq, avx512bw, avx512vl, avx512ifma
         case avx512vbmi, avx512vbmi2, avx512bitalg, avx512vpopcntdq, avx512vnni, avx512bf16, avx512fp16
         case avx512vp2intersect
-        case avx512_4vnniw, avx512_4fmaps, avx10_1, avx10_2 // swiftlint:disable:this identifier_name
+        case avx512_4vnniw, avx512_4fmaps, avx10_1, avx10_2
     }
 
     /// Decodes a snapshot; a flag that an older version did not write decodes as `false`.

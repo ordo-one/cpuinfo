@@ -12,9 +12,9 @@
 //
 // ===----------------------------------------------------------------------===//
 
+@testable import CpuInfo
 import Foundation
 import Testing
-@testable import CpuInfo
 
 extension ProcessorInfoTests {
     @Suite("ISA")

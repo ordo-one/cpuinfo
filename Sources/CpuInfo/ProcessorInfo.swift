@@ -42,7 +42,6 @@ internal import Musl
 /// containing many cores with many logical processors — "CPU" would be
 /// ambiguous, hence the name.
 public struct ProcessorInfo: Sendable, Equatable, Hashable, Codable {
-
     /// Physical processor packages (sockets) in the system.
     public let packages: [ProcessorPackage]
     /// Clusters of cores grouped by microarchitecture.
@@ -64,7 +63,7 @@ public struct ProcessorInfo: Sendable, Equatable, Hashable, Codable {
 
     // MARK: - Cached singleton
 
-    private static let _cached = Mutex<Result<ProcessorInfo, CpuInfoError>?>(nil)
+    private static let _cached = Mutex<Result<Self, CpuInfoError>?>(nil)
 
     /// The processor information for the current host.
     ///
@@ -84,7 +83,7 @@ public struct ProcessorInfo: Sendable, Equatable, Hashable, Codable {
     ///     print("\(cluster.microarchitecture): \(cluster.coreCount) cores")
     /// }
     /// ```
-    public static var current: ProcessorInfo {
+    public static var current: Self {
         switch loadOrCached() {
         case .success(let info): return info
         case .failure(let error):
@@ -120,16 +119,16 @@ public struct ProcessorInfo: Sendable, Equatable, Hashable, Codable {
         }
     }
 
-    private static func loadOrCached() -> Result<ProcessorInfo, CpuInfoError> {
+    private static func loadOrCached() -> Result<Self, CpuInfoError> {
         _cached.withLock { cached in
             if let cached { return cached }
             guard cpuinfo_initialize() else {
-                let result: Result<ProcessorInfo, CpuInfoError> =
+                let result: Result<Self, CpuInfoError> =
                     .failure(CpuInfoError(code: .initializationFailed))
                 cached = result
                 return result
             }
-            let result: Result<ProcessorInfo, CpuInfoError> = .success(ProcessorInfo(validated: ()))
+            let result: Result<Self, CpuInfoError> = .success(Self(validated: ()))
             cached = result
             return result
         }

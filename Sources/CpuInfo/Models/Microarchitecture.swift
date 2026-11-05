@@ -12,6 +12,8 @@
 //
 // ===----------------------------------------------------------------------===//
 
+// swiftlint:disable file_length
+
 internal import _cpuinfo
 
 // swiftlint:disable type_body_length
@@ -86,7 +88,7 @@ public enum Microarchitecture: UInt32, Sendable, Equatable, Hashable, Codable, C
 
     // MARK: - Intel XScale
 
-    case xscale       = 0x00100600
+    case xscale = 0x00100600
 
     // MARK: - AMD
 
@@ -244,7 +246,7 @@ public enum Microarchitecture: UInt32, Sendable, Equatable, Hashable, Codable, C
 
     // MARK: - Marvell
 
-    case pj4          = 0x00900100
+    case pj4 = 0x00900100
 
     // MARK: - Broadcom
 
@@ -253,15 +255,15 @@ public enum Microarchitecture: UInt32, Sendable, Equatable, Hashable, Codable, C
 
     // MARK: - AppliedMicro
 
-    case xgene        = 0x00B00100
+    case xgene = 0x00B00100
 
     // MARK: - Hygon
 
-    case dhyana        = 0x01000100
+    case dhyana = 0x01000100
 
     // MARK: - HiSilicon
 
-    case taishanV110   = 0x00C00100
+    case taishanV110 = 0x00C00100
 
     /// Decodes a raw value, mapping values this version does not know to ``unknown``.
     public init(from decoder: any Decoder) throws {

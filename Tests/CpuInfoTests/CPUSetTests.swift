@@ -12,9 +12,9 @@
 //
 // ===----------------------------------------------------------------------===//
 
+@testable import CpuInfo
 import Foundation
 import Testing
-@testable import CpuInfo
 
 @Suite("CPUSet")
 struct CPUSetTests {
@@ -22,8 +22,8 @@ struct CPUSetTests {
     func empty() {
         let set = CPUSet()
         #expect(set.isEmpty)
-        #expect(set.count == 0)
-        #expect(set.sortedCPUs == [])
+        #expect(set.count == 0) // swiftlint:disable:this empty_count
+        #expect(set.sortedCPUs.isEmpty)
     }
 
     @Test("array-literal initialization")
@@ -171,7 +171,7 @@ struct CPUSetTests {
     @Test("CPU IDs outside 0..<CPU_SETSIZE are rejected before the syscall")
     func outOfRangeCPURejected() {
         let error = #expect(throws: CpuInfoError.self) {
-            try ProcessorInfo.setCurrentThreadAffinity(CPUSet([0, -1, 4096]))
+            try ProcessorInfo.setCurrentThreadAffinity(CPUSet([0, -1, 4_096]))
         }
         #expect(error?.code == .threadAffinityFailed)
         #expect(error?.diagnostic?.contains("[-1, 4096]") == true)
@@ -194,7 +194,7 @@ struct CPUSetTests {
 /// One past the highest online Linux CPU ID, or `nil` if that is outside `cpu_set_t`.
 private func offlineCPUID() -> Int? {
     let id = (ProcessorInfo.current.logicalProcessors.compactMap(\.linuxID).max() ?? -1) + 1
-    return id < 1024 ? id : nil
+    return id < 1_024 ? id : nil
 }
 
 /// Runs `body` on a new thread, so affinity it sets dies with that thread instead of pinning a shared test worker.

@@ -35,7 +35,7 @@ public enum Architecture: String, Sendable, Equatable, Hashable, Codable, Custom
     /// 32-bit x86.
     case x86
     /// x86-64, which an x86-64 slice also reports under Rosetta 2.
-    case x86_64 // swiftlint:disable:this identifier_name
+    case x86_64
     /// 32-bit ARM.
     case arm
     /// 64-bit ARM (AArch64).

@@ -12,8 +12,8 @@
 //
 // ===----------------------------------------------------------------------===//
 
-import Testing
 @testable import CpuInfo
+import Testing
 
 @Suite("Microarchitecture mapping completeness")
 struct MicroarchitectureCompletenessTests {
