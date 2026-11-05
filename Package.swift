@@ -59,6 +59,7 @@ let package = Package(
         .target(
             name: "_cpuinfo",
             path: "Sources/_cpuinfo",
+            exclude: ["src", "deps", "include/cpuinfo-mock.h"],
             sources: ["shims"],
             publicHeadersPath: "include",
             cSettings: [
