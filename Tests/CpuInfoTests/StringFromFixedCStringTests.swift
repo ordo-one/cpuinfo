@@ -12,8 +12,8 @@
 //
 // ===----------------------------------------------------------------------===//
 
-import Testing
 @testable import CpuInfo
+import Testing
 
 private struct Bytes4 {
     var byte0: UInt8, byte1: UInt8, byte2: UInt8, byte3: UInt8
@@ -21,11 +21,10 @@ private struct Bytes4 {
 
 @Suite("stringFromFixedCString")
 struct StringFromFixedCStringTests {
-
     @Test("all-zero buffer returns empty string")
     func allZero() {
         var buffer = Bytes4(byte0: 0, byte1: 0, byte2: 0, byte3: 0)
-        #expect(stringFromFixedCString(&buffer) == "")
+        #expect(stringFromFixedCString(&buffer).isEmpty)
     }
 
     @Test("normal null-terminated string")
@@ -49,7 +48,6 @@ struct StringFromFixedCStringTests {
 
 @Suite("safeRange")
 struct SafeRangeTests {
-
     @Test("zero count returns empty range")
     func zeroCount() {
         #expect(safeRange(0) == 0..<0)

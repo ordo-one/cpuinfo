@@ -24,11 +24,11 @@ public struct CacheFlags: OptionSet, Sendable, Hashable, Codable {
 
     /// The platform reported the cache as unified. ARM platforms, Apple Silicon included, leave this unset
     /// for L2 and above, so ask ``CacheLevel/isUnified`` whether a cache serves both instructions and data.
-    public static let unified         = CacheFlags(rawValue: UInt32(CPUINFO_CACHE_UNIFIED))
+    public static let unified         = Self(rawValue: UInt32(CPUINFO_CACHE_UNIFIED))
     /// All lines present in lower-level caches also exist in this cache.
-    public static let inclusive       = CacheFlags(rawValue: UInt32(CPUINFO_CACHE_INCLUSIVE))
+    public static let inclusive       = Self(rawValue: UInt32(CPUINFO_CACHE_INCLUSIVE))
     /// Uses a complex (non-power-of-two modular) index function.
-    public static let complexIndexing = CacheFlags(rawValue: UInt32(CPUINFO_CACHE_COMPLEX_INDEXING))
+    public static let complexIndexing = Self(rawValue: UInt32(CPUINFO_CACHE_COMPLEX_INDEXING))
 }
 
 /// The kind of data a cache serves.

@@ -12,9 +12,9 @@
 //
 // ===----------------------------------------------------------------------===//
 
+@testable import CpuInfo
 import Foundation
 import Testing
-@testable import CpuInfo
 
 @Suite("CpuInfo namespace")
 struct CpuInfoNamespaceTests {

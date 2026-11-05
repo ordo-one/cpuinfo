@@ -38,8 +38,7 @@
 /// try ProcessorInfo.setCurrentThreadAffinity(set) // Linux only
 /// ```
 public struct CPUSet: Sendable, Equatable, Hashable, ExpressibleByArrayLiteral {
-    @usableFromInline
-    internal var storage: Set<Int>
+    @usableFromInline internal var storage: Set<Int>
 
     /// Creates an empty CPU set.
     public init() { storage = [] }

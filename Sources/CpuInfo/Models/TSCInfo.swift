@@ -67,11 +67,11 @@ public struct TSCInfo: Sendable, Equatable, Hashable, Codable, CustomStringConve
 
     /// Populated by ``ProcessorInfo`` during initialization.
     /// Returns `nil` when the host does not expose CPUID leaf 0x15.
-    internal static func load() -> TSCInfo? {
+    internal static func load() -> Self? {
         #if arch(x86_64) || arch(i386)
         let info = cpuinfo_x86_query_tsc_info()
         guard info.available else { return nil }
-        return TSCInfo(
+        return Self(
             denominator: info.denominator,
             numerator: info.numerator,
             crystalClockHz: info.crystal_clock_hz > 0 ? info.crystal_clock_hz : nil,

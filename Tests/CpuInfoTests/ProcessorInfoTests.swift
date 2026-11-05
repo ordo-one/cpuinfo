@@ -12,12 +12,14 @@
 //
 // ===----------------------------------------------------------------------===//
 
-import Testing
 @testable import CpuInfo
+#if os(macOS)
+import Darwin
+#endif
+import Testing
 
 @Suite("ProcessorInfo")
 struct ProcessorInfoTests {
-
     let info: ProcessorInfo
 
     init() throws {
@@ -151,7 +153,7 @@ struct ProcessorInfoTests {
     }
 
     #if os(macOS) || os(Linux)
-    @Test("concurrent first access initializes once and agrees")
+    @Test("concurrent first access initializes once and agrees", .disabled(if: exitTestsLackSanitizer))
     func concurrentFirstAccess() async {
         // A fresh process, so the racing tasks hit the uninitialized cache.
         await #expect(processExitsWith: .success) {
@@ -165,7 +167,7 @@ struct ProcessorInfoTests {
         }
     }
 
-    @Test("current-CPU getters work as the first API call")
+    @Test("current-CPU getters work as the first API call", .disabled(if: exitTestsLackSanitizer))
     func currentGettersBeforeInitialization() async {
         await #expect(processExitsWith: .success) {
             _ = ProcessorInfo.currentLogicalProcessor
@@ -261,3 +263,10 @@ struct ProcessorInfoTests {
         #expect(!Architecture.unknown.isARMFamily)
     }
 }
+
+#if os(macOS)
+// SwiftPM dlopens the test bundle on macOS, so an exit-test child aborts with "Interceptors are not working" under ASan.
+private let exitTestsLackSanitizer = dlsym(UnsafeMutableRawPointer(bitPattern: -2), "__asan_init") != nil // RTLD_DEFAULT
+#elseif os(Linux)
+private let exitTestsLackSanitizer = false
+#endif

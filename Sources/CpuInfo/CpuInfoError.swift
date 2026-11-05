@@ -20,7 +20,6 @@
 /// enum so that new cases can be added in future minor releases without
 /// breaking exhaustive `switch` statements.
 public struct CpuInfoError: Error, Sendable, Equatable, CustomStringConvertible {
-
     /// A specific failure condition.
     public struct Code: RawRepresentable, Hashable, Sendable {
         public let rawValue: Int32
@@ -29,15 +28,15 @@ public struct CpuInfoError: Error, Sendable, Equatable, CustomStringConvertible 
         /// The underlying cpuinfo library failed to initialize — typically
         /// out-of-memory, a kernel that does not expose processor information,
         /// or a sandbox that denies the required introspection syscalls.
-        public static let initializationFailed    = Code(rawValue: 1)
+        public static let initializationFailed = Self(rawValue: 1)
 
         /// Thread affinity is not available on the current platform.
         /// Only Linux supports per-thread CPU pinning via ``ProcessorInfo/setCurrentThreadAffinity(_:)``.
-        public static let threadAffinityUnsupported = Code(rawValue: 2)
+        public static let threadAffinityUnsupported = Self(rawValue: 2)
 
         /// `pthread_setaffinity_np(3)` failed or the set held an ID outside `0..<CPU_SETSIZE`.
         /// ``diagnostic`` carries the errno and its message, or the bad IDs.
-        public static let threadAffinityFailed    = Code(rawValue: 3)
+        public static let threadAffinityFailed = Self(rawValue: 3)
     }
 
     /// The specific failure condition.

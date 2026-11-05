@@ -30,7 +30,7 @@ REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 UPSTREAM_URL="https://github.com/pytorch/cpuinfo.git"
 VENDOR_DST="$REPO_ROOT/Sources/_cpuinfo"
 VERSION_FILE="$REPO_ROOT/CPUINFO_VERSION"
-SWIFT_VERSION_FILE="$REPO_ROOT/Sources/CpuInfo/CpuInfo.swift"
+SWIFT_VERSION_FILE="$REPO_ROOT/Sources/CpuInfo/CpuInfoVersion.swift"
 NOTICES_FILE="$REPO_ROOT/NOTICES"
 WORK_DIR="$(mktemp -d)"
 STAGING_DIR="$WORK_DIR/staging"
@@ -55,7 +55,7 @@ cleanup() {
     if ! $SWAP_COMMITTED && [[ -d "$META_BACKUP" ]]; then
         cp -p "$META_BACKUP/CPUINFO_VERSION" "$VERSION_FILE" 2>/dev/null || true
         cp -p "$META_BACKUP/NOTICES" "$NOTICES_FILE" 2>/dev/null || true
-        cp -p "$META_BACKUP/CpuInfo.swift" "$SWIFT_VERSION_FILE" 2>/dev/null || true
+        cp -p "$META_BACKUP/CpuInfoVersion.swift" "$SWIFT_VERSION_FILE" 2>/dev/null || true
         echo "==> Restored previous version metadata." >&2
     fi
     rm -rf "$WORK_DIR"
@@ -246,7 +246,7 @@ fi
 
 mkdir -p "$META_BACKUP"
 cp -p "$VERSION_FILE" "$NOTICES_FILE" "$META_BACKUP"/ 2>/dev/null || true
-cp -p "$SWIFT_VERSION_FILE" "$META_BACKUP/CpuInfo.swift"
+cp -p "$SWIFT_VERSION_FILE" "$META_BACKUP/CpuInfoVersion.swift"
 echo "$NEW_SHA" > "$VERSION_FILE"
 echo "==> CPUINFO_VERSION updated to $NEW_SHA"
 

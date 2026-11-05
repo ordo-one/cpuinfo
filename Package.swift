@@ -48,6 +48,9 @@ let package = Package(
                 + "binary frameworks should enable this trait."
         )
     ],
+    dependencies: [
+        .package(url: "https://github.com/swiftlang/swift-docc-plugin", from: "1.5.0")
+    ],
     targets: [
 
         // MARK: - Vendored C library
@@ -59,6 +62,7 @@ let package = Package(
         .target(
             name: "_cpuinfo",
             path: "Sources/_cpuinfo",
+            exclude: ["src", "deps", "include/cpuinfo-mock.h"],
             sources: ["shims"],
             publicHeadersPath: "include",
             cSettings: [
